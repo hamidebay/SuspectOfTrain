@@ -1,6 +1,8 @@
 let tour = 0;
+// hirsizin hangi vagonda oldugunu belirliyor
 const wagon = Math.floor(Math.random() * 10) + 1;
 
+// Sirayla girilen sayinin hirsizin oldugu vagonla uyumlu olup olmadigi kontrol ediliyor
 for (tour = 1; tour < 5; tour++) {
   let tahmin = prompt("tahminini gir");
 
