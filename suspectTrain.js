@@ -4,7 +4,6 @@ const wagon = Math.floor(Math.random() * 10) + 1;
 for(tour = 1; tour<5; tour++) {
     let tahmin = prompt("tahminini gir");
 
-    tour++;
     if(tahmin == wagon){
         alert("Bravooo kazandin");
     }
@@ -12,15 +11,15 @@ for(tour = 1; tour<5; tour++) {
           
         alert("Hirsiz arka vagonlarda");
     }
-    else if(tahmin > wagon){
+    else{if(tahmin > wagon)
           
         alert("Hirsiz ön vagonlarda");
     }
-    else{
-        alert("üzgünüm kaybettin");
-    }
-    
+    if(tour == 4 && tahmin != wagon){alert("üzgünüm hirsizi bulamadiniz");}
 }
+
+
+
 
 
 
